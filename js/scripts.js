@@ -1,24 +1,29 @@
-//User Interface Logic
-//window.addEventListener("load", 
+//Busniess Logic
+function characterCombination (species, trade, gender, color, dob) {
+  return species + gender + trade + color + dob
+}
 
-function handleGeneration(event){
-  event.preventDefault();
+function generate(species, trade, gender, color, dob){
+  //if statement goes here
+}
+
+//User Interface Logic"
+window.onload = function handleGeneration(event){
+  let form = document.querySelector("form")
+
   const species = document.getElementById("species").value;
   const trade = document.getElementById("trade").value;
-  const gender = document.getElementById("gender").value;
+  const gender = document.querySelector("input[name='gender']:checked").value;
   const favColor = document.getElementById("color").value;
   const dob = document.getElementById("born").value;
 
+  document.getElementById("output").innerText = characterCombination();
 
-window.addEventListener("load", function () {
-  document.getElementById("characterSelect").addEventListener("submit", handleGeneration)
-});
-
-let result;
-if (species === "Elf") {
-    document.getElementById("characterResults").removeAttribute("class");
+function submitInput(event){
+  event.preventDefault();
+  handleGeneration();
 }
-
-document.getElementById("output").innerText = result;
-
-};
+window.addEventListener("load", function () {
+  document.getElementById("characterSelect").addEventListener("submit", submitInput)
+});
+}
