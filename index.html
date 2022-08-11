@@ -16,15 +16,15 @@
     <p>Select your species:</p>
     <select id="species">
       <option>Select an option</option>
-      <option>Elf</option>
-      <option>Goblin</option>
-      <option>Human</option>
-      <option>Fairy</option>
+      <option value="1">Elf</option>
+      <option value="2">Goblin</option>
+      <option value="3">Human</option>
+      <option value="4">Fairy</option>
     </select><br>
 
-    <label for="characterSelect"><h3>Class</h3></label>
-    <p>Select your character's class category:</p>
-    <select id="class">
+    <label for="characterSelect"><h3>Trade</h3></label>
+    <p>Select your character's trade category:</p>
+    <select id="trade">
       <option>Select an option</option>
       <option value="1">Druid</option>
       <option value="2">Barbarian</option>
@@ -56,7 +56,7 @@
   </form>
   <div id="characterResults" class="hidden">
     <h1>Heres your character!</h1>
-    <p id="results"></p>
+    <p id="output"></p>
   </div>
 </body>
 </html>
