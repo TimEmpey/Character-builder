@@ -12,19 +12,43 @@
 <body>
   <h1>Build your character</h1>
   <form id="characterSelect">
+    <label for="characterSelect"><h2>Species</h2></label>
+    <p>Select your species of preference:</p>
     <select id="species">
       <option>Elf</option>
-        <option>Goblin</option>
-        <option>Human</option>
-        <option>Fairy</option>
-    </select>
+      <option>Goblin</option>
+      <option>Human</option>
+      <option>Fairy</option>
+    </select><br>
 
-    <select>
+    <label for="characterSelect"><h3>Character number 2</h3></label>
+    <p>Select your character's category:</p>
+    <select id="class">
       <option value="1">Druid</option>
       <option value="2">Barbarian</option>
       <option value="3">Fighter</option>
       <option value="4">Monk</option>
-    </select>
+    </select><br>
+
+    <label for="characterSelect"><h3>Gender</h3></label>
+    <p>Select your characters Gender</p>
+      <input type="radio" name="gender" value="female" checked>
+      Female
+    </label>
+    <label>
+      <input type="radio" name="gender" value="male">
+      Male
+    </label>
+    <label>
+      <input type="radio" name="gender" value="nonbinary">
+      Nonbinary
+    </label><br>
+
+    <label for="color"><h3>Pick your character's color:</h3></label><br>
+    <input id="color" type="color">
+    
+    <label for="born"><h3>Characters date of birth:</h3></label><br>
+    <input id="born" type="date">
   </form>
 </body>
 
